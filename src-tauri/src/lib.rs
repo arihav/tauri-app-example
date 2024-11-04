@@ -11,7 +11,7 @@ fn greet(name: &str) -> String {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .plugin(tauri_plugin_localhost::Builder::new(3002).build())
+        .plugin(tauri_plugin_localhost::Builder::new(1420).build())
         .setup(move |app|{
 
             let handle = app.handle().clone();
